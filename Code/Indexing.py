@@ -12,6 +12,7 @@ def index_data():
         helpers.bulk(es, reader,index=INDEX_NAME, doc_type=DOCU_TYPE)
     
 if __name__ == '__main__':
+    es.indices.delete(index=INDEX_NAME)
     es.indices.create(index=INDEX_NAME, ignore=400)
     index_data()
 

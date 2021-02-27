@@ -1,4 +1,2 @@
-
-
-name_index = 'covid'
-docu_type = 'literaturecovid'
+INDEX_NAME = 'covid'
+DOCU_TYPE = 'literaturecovid'
